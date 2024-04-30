@@ -18,7 +18,7 @@ function App() {
 
   const startFerrisWheel = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:3000/start", { method: "POST" });
+      const response = await fetch("http://35.241.255.143:3000/start", { method: "POST" });
       if (!response.ok) {
         throw new Error("Erreur lors du démarrage de la ferris wheel");
       }
@@ -30,7 +30,7 @@ function App() {
 
   const stopFerrisWheel = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:3000/stop", { method: "POST" });
+      const response = await fetch("http://35.241.255.143:3000/stop", { method: "POST" });
       if (!response.ok) {
         throw new Error("Erreur lors de l'arrêt de la ferris wheel");
       }
